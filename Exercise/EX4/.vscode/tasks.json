@@ -1,0 +1,77 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gcc_ex4",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-c",
+                "-o",
+                "ex4.o",
+                "ex4.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$gcc",
+        },
+        {
+            "label": "gcc_vector",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-c",
+                "-o",
+                "vector.o",
+                "Vector.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$gcc",
+        },
+        {
+            "label": "gcc_ex4_out",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "ex4",
+                "ex4.o",
+                "vector.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$gcc",
+        },{
+            "label": "Build",
+            "dependsOn": [
+                "gcc_ex4",
+                "gcc_vector",
+                "gcc_ex4_out"
+            ]
+        }
+    ]
+}

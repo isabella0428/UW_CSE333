@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/isabella/Desktop/CSE333/Exercise/EX4/Vector.c
+assert.h
+-
+stdbool.h
+-
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+Vector.h
+/Users/isabella/Desktop/CSE333/Exercise/EX4/Vector.h
+
+/Users/isabella/Desktop/CSE333/Exercise/EX4/Vector.h
+assert.h
+-
+stdbool.h
+-
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+

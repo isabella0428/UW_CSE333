@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/hw2.dir/doctable.c.o CMakeFiles/hw2.dir/filecrawler.c.o  -o hw2 
